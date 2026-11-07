@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nabídka – Malö kafe Ostrava</title>
+  <meta name="description" content="Ceník kávy a menu snídaní v Malö kafe: espresso, flat white, filtrovaná káva, avo toast, lívanec z podmáslí, Malö snídaně.">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Oswald:wght@200..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="topbar">
+    <a class="logo" href="index.html" aria-label="Malö kafe – úvod"><img class="logo__mark" src="logo-svetle.png" width="320" height="320" alt=""><span class="logo__name">MALÖ</span><span class="logo__sub">kafe</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otevřít menu"><span></span></button>
+  </header>
+
+  <aside class="rail" id="menu">
+    <a class="logo" href="index.html" aria-label="Malö kafe – úvod"><img class="logo__mark" src="logo-svetle.png" width="320" height="320" alt=""><span class="logo__name">MALÖ</span><span class="logo__sub">kafe</span></a>
+    <nav class="rail__nav" aria-label="Hlavní menu">
+      <ul>
+        <li><a href="index.html"><span class="t">Úvod</span></a></li>
+        <li><a href="nabidka.html" aria-current="page"><span class="t">Nabídka</span></a></li>
+        <li><a href="kontakt.html"><span class="t">Kontakt</span> <span class="tag-hiring">hledáme</span></a></li>
+      </ul>
+    </nav>
+    <div class="rail__foot">
+      <p class="status" data-status><span class="status__dot"></span><span class="status__text">Po–Pá 7:30–18:30</span></p>
+      <p class="rail__hours">Po–Pá 7:30–18:30<br>So–Ne 9:00–18:30</p>
+      <div class="social">
+        <a href="https://www.instagram.com/malokafeostrava/" target="_blank" rel="noopener" aria-label="Instagram Malö kafe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.facebook.com/notroublefm/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v4H8v7h4v-7h3l.5-4H12V7.5c0-.3.2-.5.5-.5H15z"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <main class="main" id="obsah">
+    <header class="page-head">
+      <div class="wrap reveal">
+        <span class="kicker kicker--light">Nabídka</span>
+        <h1>Káva a&nbsp;snídaně</h1>
+        <p>Ceny jsou v&nbsp;korunách podle tabule v&nbsp;kavárně a&nbsp;menu snídaní.</p>
+      </div>
+    </header>
+
+    <section class="section" id="kava">
+      <div class="wrap menu-grid">
+        <div>
+          <div class="section-head reveal">
+            <span class="kicker">Z mlýnku</span>
+            <h2>Káva</h2>
+          </div>
+          <ul class="board">
+            <li><span class="name">Espresso</span><span class="price">59</span></li>
+            <li><span class="name">Lungo</span><span class="price">59</span></li>
+            <li><span class="name">Americano</span><span class="price">59</span></li>
+            <li><span class="name">Doppio</span><span class="price">70</span></li>
+            <li><span class="name">Espresso macchiato</span><span class="price">65</span></li>
+            <li><span class="name">Cappuccino</span><span class="price">72</span></li>
+            <li><span class="name">Caffé latte</span><span class="price">82</span></li>
+            <li><span class="name">Flat white</span><span class="price">85</span></li>
+            <li><span class="name">Filtrovaná káva</span><span class="price">72</span></li>
+            <li><span class="name">Rostlinné mléko</span><span class="price">+20</span></li>
+          </ul>
+        </div>
+        <div class="menu-side reveal">
+          <span class="kicker">Naše pražírny</span>
+          <p>Na mlýnku máme kávu z&nbsp;českých pražíren. Mia Coffee je rodinná pražírna ze severu Čech, CHROAST praží výběrovou kávu v&nbsp;Hradci Králové.</p>
+          <img src="kava-prazirny.webp" width="1440" height="1920" loading="lazy" alt="Sáčky výběrové kávy od Mia Coffee a CHROAST">
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-oat" id="snidane">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Pro Malö rána</span>
+          <h2>Snídaně</h2>
+          <p>Slané, sladké, lehké i&nbsp;vydatné. Pečivo je z&nbsp;Chleba Janovice.</p>
+        </div>
+        <div class="breakfast">
+          <div>
+            <ul class="dishes">
+              <li class="dish reveal"><h3>Párečky od Bobra</h3><span class="price">159</span><p>2 párky, hořčice, kečup, křen, chleba Janovice</p></li>
+              <li class="dish reveal"><h3>Lívanec z&nbsp;podmáslí s&nbsp;ovocem</h3><span class="price">149</span><p>zakysaná smetana, ovocný sirup, ovoce</p></li>
+              <li class="dish reveal"><h3>Avo toast se zastřenými vejci</h3><span class="price">159</span><p>2 zastřená vejce, avokádo, rajčátka, borůvky, rukola</p></li>
+              <li class="dish reveal"><h3>Míchaná vejce</h3><span class="price">159</span><p>3 míchaná vejce, pažitka, slanina, chleba, salátek</p></li>
+              <li class="dish reveal"><h3>Ovesná kaše vegan &amp; bezlepek</h3><span class="price">139</span><p>mandlové mléko, jogurt, ovocný sirup, ovoce</p></li>
+              <li class="dish reveal"><h3>Malö snídaně</h3><span class="price">179</span><p>míchaná vejce, slanina, páreček, avokádo, marmeláda, máslo, salátek, chleba</p></li>
+            </ul>
+            <p class="extras reveal">
+              <span><strong>Bezlepkové pečivo</strong> 15</span>
+              <span><strong>Slanina navíc</strong> 10</span>
+              <span><strong>Vejce navíc</strong> 10</span>
+              <span><strong>Párek navíc</strong> 25</span>
+            </p>
+          </div>
+          <div class="dish-photos">
+            <figure class="reveal"><img src="avo-toast.jpg" width="1125" height="2000" loading="lazy" alt="Avo toast se zastřeným vejcem a rukolou"><figcaption>Avo toast</figcaption></figure>
+            <figure class="reveal"><img src="livanec.jpg" width="480" height="853" loading="lazy" alt="Lívanec s jahodami, borůvkami a mátou"><figcaption>Lívanec z podmáslí</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer main">
+    <div class="wrap footer__grid">
+      <a class="logo" href="index.html" aria-label="Malö kafe – úvod"><img class="logo__mark" src="logo-svetle.png" width="320" height="320" alt=""><span class="logo__name">MALÖ</span><span class="logo__sub">kafe</span></a>
+      <p>28. října 106/18, Moravská Ostrava<br>Po–Pá 7:30–18:30 · So–Ne 9:00–18:30</p>
+      <nav class="footer__links" aria-label="Odkazy v patičce">
+        <a href="nabidka.html">Nabídka</a><a href="kontakt.html">Kontakt</a><a href="kontakt.html#prace">Práce</a>
+        <a href="https://www.instagram.com/malokafeostrava/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p>© <span data-year>2026</span> Malö kafe</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
