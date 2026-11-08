@@ -65,7 +65,7 @@ Všechny barvy jsou CSS proměnné v `:root`, v kódu se hex nepíše. K hlavní
 - **Boční menu (`.rail`):** pevný pruh 248 px na levém okraji, `--forest`, bez okraje, aby splýval s úvodním pásem fotky. Nahoře logo, pod ním odkazy pod sebou (text vodorovně): Úvod, Nabídka, Kontakt. Aktuální stránka má `aria-current="page"`, světlejší podklad `--moss` a dřevěnou linku vlevo. Dole stav otevřeno/zavřeno a Instagram. U „Kontakt“ svítí štítek „hledáme“. **Telefon v menu není.**
 - **Tlačítko (`.btn`):** min. výška 48 px, zaoblení 999 px. Plné: `--forest` + bílý text, hover `--forest-deep`. Na zelené: `--oat` + `--ink`, hover bílé. Obrysové: rámeček 1,5 px. Focus: obrys 3 px `--wood`, odsazení 3 px.
 - **Úvod (od 8. 11. 2026):** nahoře vodorovný pás čisté fotky `head-bar.jpg` (spodní výřez z `head.jpg` bez nápisu a rámečku: bar s kávovarem, mlýnkem a ceníkem), výška clamp(220px, 38vh, 420px). Levý okraj pásu přechází do zelené menu, spodní se rozplyne do zelené plochy. Pod ním kicker, velký nadpis „MALÖ KAFE“ (Oswald 200, prostrkání 0,3 em jako původní nápis), podnadpis, text, stav a tlačítka, vše na jedné obrazovce. Na mobilu stejný pás, nahoře splývá s lištou. Původní `head.jpg` s nápisem se už nepoužívá. Svislý pás byl zamítnut (uživatelka chtěla vodorovný).
-- **Cedulka „Hledáme posilu“ (`.sign`):** jen na úvodní stránce. Ovesná dřevěná cedulka na dvou provázcích vpravo nahoře. Po načtení úvodu spadne shora (1,1 s), 1,5 s visí a pak odjede nahoru. Znovu až po novém načtení úvodu. Když je nad ní myš nebo fokus, počká. Tlačítko vede na `kontakt.html#prace`. Má křížek a tlačítko na `prace.html`. Na stránce Práce se neukazuje. Po zavření zůstane v menu štítek „hledáme“.
+- **Cedulka „Hledáme posilu“ (`.sign`):** jen na úvodní stránce. Ovesná dřevěná cedulka na dvou provázcích vpravo nahoře. Po načtení úvodu spadne shora (1,1 s), 1,5 s visí a pak odjede nahoru. Znovu až po novém načtení úvodu. Když je nad ní myš nebo fokus, počká. Tlačítko vede na `kontakt.html#prace`. Nemá zavírací křížek (zmizí sama). V menu u Kontaktu zůstává štítek „hledáme“.
 - **Ceník kávy:** řádky název – cena s dřevěnou linkou pod každým, jako latě na stěně.
 - **Snídaně:** řádek s názvem, složením a cenou, vedle dvě fotky (avo toast, lívanec).
 - **Fotky:** zaoblené obdélníky 18–28 px, poměr 4:5, jemný stín.
@@ -126,7 +126,7 @@ Patička je stejná na všech stránkách (`--forest-deep`).
 4. Žádné emoji v textu webu.
 5. Hex jen v `:root`.
 6. Žádná stránka s recenzemi (rozhodnutí 8. 11. 2026).
-7. Cedulka nikde jinde než na úvodu a nesmí zůstat viset (8. 11. 2026).
+7. Cedulka nikde jinde než na úvodu, nesmí zůstat viset a nemá zavírací křížek (8. 11. 2026).
 8. Žádná samostatná stránka Práce (8. 11. 2026).
 9. Na úvodu žádná fotka s nápisem ani rámečkem a žádný čtverec vpravo (8. 11. 2026).
 
@@ -135,7 +135,7 @@ Patička je stejná na všech stránkách (`--forest-deep`).
 | Zlom | Změna |
 |---|---|
 | ≤ 960 px | menu se schová, nahoře úzká zelená lišta s logem a tlačítkem menu, menu se vysune zleva; úvod v jednom sloupci (fotka nahoře) |
-| ≤ 760 px | snídaně: fotky pod seznamem vedle sebe; pozice na stránce Práce pod sebou |
+| ≤ 760 px | snídaně: fotky pod seznamem vedle sebe; pozice v sekci Práce na Kontaktu pod sebou |
 | ≤ 480 px | tlačítka na celou šířku, menší cedulka |
 
 - **Kontrola:** žádný vodorovný scroll na 375 px, otestovat 375 a 1280 px.

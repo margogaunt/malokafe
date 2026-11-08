@@ -101,8 +101,6 @@
     sign.addEventListener('mouseenter', function () { clearTimeout(hideTimer); });
     sign.addEventListener('mouseleave', function () { hideTimer = setTimeout(hideSign, 800); });
     sign.addEventListener('focusin', function () { clearTimeout(hideTimer); });
-    var close = sign.querySelector('.sign__close');
-    if (close) close.addEventListener('click', hideSign);
   }
 
   /* Rok v patičce */
